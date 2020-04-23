@@ -160,10 +160,7 @@ function processDuplicateFree(list, callback) {
  * [2] Invoking `lowerCaseStrings` with `['a', 'b', 'c' ]` will return `[ 'a', 'b', 'c' ]`.
 */
 function lowerCaseStrings(strings) {
-
-  const lowerCase = strings.forEach(strings).toLowerCase()
-  console.log(lowerCase)
-  return lowerCase
+  return strings.map(function (lc) { return lc.toLowerCase() })
 }
 
 /**
