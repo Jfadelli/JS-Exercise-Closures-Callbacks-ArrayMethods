@@ -217,15 +217,16 @@ function removeApple(strings) {
  * 
  * @param strings an array of strings.
  * @returns a string with all entries in `strings` combined together.
- * 
+ *
  * 
  * Examples of usage of this function:
  * [1] Invoking `stringSmash` with `[ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ]` will return 'orangeapplebananaapplesapplemango'.
  * 
  * [2] Invoking `stringSmash` with `['a', 'b', 'c' ]` will return `abc`.
 */
-function stringSmash(/* code here */) {
-  /* code here */
+function stringSmash(strings) {
+  const reducer = (acc, cv) => acc + cv;
+  return strings.reduce(reducer)
 }
 
 // A local community center is holding a fund raising 5k fun run and has invited
